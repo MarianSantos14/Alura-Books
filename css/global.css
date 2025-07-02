@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@import url(/css/indexCSS/header.css);
+@import url(/css/indexCSS/banner.css);
+@import url(/css/indexCSS/carrossel.css);
+@import url(/css/indexCSS/contato.css);
+@import url(/css/indexCSS/topicos.css);
+@import url(/css/indexCSS/rodape.css);
+
+:root {
+    --cor-background: #EBECEE;
+    --cor-base: #FFFFFF;
+    --cor-base2: #000;
+    --cor-base3: #474646;
+    --cor-base4: #858585;
+    --cor-footer: #f9f9f9;
+    --cor-destaque: #EB9B00;
+    --cor-destaque-hover: #f2a409;
+    --cor-titulo: #002f52;
+    --gradient: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+    --fonte-principal: "Poppins", sans-serif;
+    --fonte-secundaria: "Josefin Sans";
+    --shadow: rgba(117, 119, 121, 0.2) 0px 8px 24px;
+}
+
+body {
+    background-color: var(--cor-background);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+}
