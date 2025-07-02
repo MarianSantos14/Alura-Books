@@ -3,12 +3,17 @@
 :root {
   --bg-color: #ffffff;
   --button-color: #326589;
-  --text-title-color: #fc6621;
+  --text-title-color: #012038;
   --text-description-color: #fc6621;
   --text-price-color: #002f52;
   --text-author-color: #858585;
   --text-tag-color: #9c9c9c;
+
+  --cor-destaque: #EB9B00;
+  --cor-destaque-hover: #f2a409;
 }
+
+/* --text-title-color: #fc6621; */
 
 body {
   font-family: 'Poppins';
@@ -19,18 +24,8 @@ body {
   margin: 0 auto;
 }
 
-.header {
-  text-align: center;
-  width: 100%;
-  background-color: var(--bg-color);
-  margin: 15px 15px;
-}
-
 .banner {
-  background-image: url('/img/livros/Banner-1.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 278px;
+  padding: 5em 0;
 }
 
 .nav {
@@ -42,7 +37,7 @@ body {
 }
 
 .btn {
-  background-color: var(--button-color);
+  background-color: var(--cor-destaque);
   border: none;
   cursor: pointer;
   height: 44px;
@@ -57,24 +52,40 @@ body {
 }
 
 .btn:hover {
-  color: #cecdcd;
+  background-color: var(--cor-destaque-hover);
+  color: #efefef;
   border-radius: 10px;
-  border-bottom: 2px solid var(--text-description-color);
+}
+
+.anim-livro {
+  margin: 0.4em 1em 0 0.4em;
+  transform: scale(1);
+  transition: 0.5s;
+}
+
+.anim-livro:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
 }
 
 .livros {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .livro {
-  width: 302px;
+  margin: 1.5em;
+  width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 644px;
+  height: 600px;
   margin-bottom: 1rem;
+}
+
+.livro__imagens {
+
 }
 
 .indisponivel {
@@ -115,9 +126,9 @@ body {
   text-align: left;
   font-size: 14px;
   font-weight: 500;
-  color: var(--text-tag-color);
+  color: var(--text-description-color);
   padding: 5px 4px;
-  background: rgba(197, 197, 197, 0.25);
+  background: #fc662146;
   border-radius: 4px;
   margin-right: 1rem;
 }
@@ -143,9 +154,9 @@ body {
 
 .rodape {
   width: 100%;
-  height: 104px;
+  padding: 1em 0;
   background: linear-gradient(96.48deg, #002f52 36.3%, #326589 99.56%);
-  margin-top: 1rem;
+  margin-top: 2rem;
   text-align: center;
 
   display: flex;
